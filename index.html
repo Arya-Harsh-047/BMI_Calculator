@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know Your BMI Index</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- <div class="content">
+      <h1>BMI introduction</h1>
+      <p>BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required.</p>
+       -->
+    </div>
+    <form action="" class="bmiForm">
+      <div class="bmiCalculator">
+        <h2>Calculate your BMI</h2>
+        <h5>(Body Mass Index)</h5>
+        <div class="bmiCalculator-Weight">
+          <input
+            type="range"
+            min="25"
+            max="150"
+            name="realWeight"
+            id="sliderWeight"
+            value="60"
+          />
+          <p>
+            Weight :
+            <input type="number" value="60" id="inputWeight" min="25" max="150"/>
+            <span id="weight"> kg</span> 
+          </p>
+        </div>
+        <div class="bmiCalculator-Height">
+          <input
+            type="range"
+            min="25"
+            max="250"
+            name="realHeight"
+            id="sliderHeight"
+            value="60"
+          />
+          <p>
+            Height :
+            <input type="number" value="60" id="inputHeight" min="25" max="250"/>
+            <span id="Height"> cm</span> 
+          </p>
+        </div>
+
+        <input type="button" value="Calculate" class="btn" />
+        <p id="outputBMI">
+          <strong>Your BMI :</strong>
+          <span id="yourBMI"></span>
+        </p>
+        <p class="evaluation-xMessage">
+          <span id="evaluationMessage"></span>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
